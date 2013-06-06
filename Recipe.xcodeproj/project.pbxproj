@@ -20,6 +20,8 @@
 		6BCA17871760E2770021685F /* PRPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BCA17851760E2770021685F /* PRPViewController.xib */; };
 		6BCA178F1760E2BC0021685F /* PRPRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA178E1760E2BC0021685F /* PRPRecipe.m */; };
 		6BCA17911760EC370021685F /* br-5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6BCA17901760EC370021685F /* br-5.jpg */; };
+		6BCA17981760F2720021685F /* PRPRecipesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA17961760F2720021685F /* PRPRecipesListViewController.m */; };
+		6BCA17991760F2720021685F /* PRPRecipesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BCA17971760F2720021685F /* PRPRecipesListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,9 @@
 		6BCA178D1760E2BC0021685F /* PRPRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRPRecipe.h; path = Recipe/PRPRecipe.h; sourceTree = "<group>"; };
 		6BCA178E1760E2BC0021685F /* PRPRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRPRecipe.m; path = Recipe/PRPRecipe.m; sourceTree = "<group>"; };
 		6BCA17901760EC370021685F /* br-5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "br-5.jpg"; path = "Recipe/br-5.jpg"; sourceTree = "<group>"; };
+		6BCA17951760F2720021685F /* PRPRecipesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRPRecipesListViewController.h; path = Recipe/PRPRecipesListViewController.h; sourceTree = "<group>"; };
+		6BCA17961760F2720021685F /* PRPRecipesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRPRecipesListViewController.m; path = Recipe/PRPRecipesListViewController.m; sourceTree = "<group>"; };
+		6BCA17971760F2720021685F /* PRPRecipesListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PRPRecipesListViewController.xib; path = Recipe/PRPRecipesListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +66,9 @@
 		6BCA175E1760E2770021685F = {
 			isa = PBXGroup;
 			children = (
+				6BCA17951760F2720021685F /* PRPRecipesListViewController.h */,
+				6BCA17961760F2720021685F /* PRPRecipesListViewController.m */,
+				6BCA17971760F2720021685F /* PRPRecipesListViewController.xib */,
 				6BCA178D1760E2BC0021685F /* PRPRecipe.h */,
 				6BCA178E1760E2BC0021685F /* PRPRecipe.m */,
 				6BCA17901760EC370021685F /* br-5.jpg */,
@@ -173,6 +181,7 @@
 				6BCA17811760E2770021685F /* Default-568h@2x.png in Resources */,
 				6BCA17871760E2770021685F /* PRPViewController.xib in Resources */,
 				6BCA17911760EC370021685F /* br-5.jpg in Resources */,
+				6BCA17991760F2720021685F /* PRPRecipesListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +196,7 @@
 				6BCA177B1760E2770021685F /* PRPAppDelegate.m in Sources */,
 				6BCA17841760E2770021685F /* PRPViewController.m in Sources */,
 				6BCA178F1760E2BC0021685F /* PRPRecipe.m in Sources */,
+				6BCA17981760F2720021685F /* PRPRecipesListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

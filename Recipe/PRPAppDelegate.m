@@ -8,20 +8,34 @@
 
 #import "PRPAppDelegate.h"
 
-#import "PRPViewController.h"
+//#import "PRPViewController.h"
+#import "PRPRecipesListViewController.h"
+#import "PRPRecipe.h"
 
 @implementation PRPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  NSMutableArray *localRecipes=[NSMutableArray array];
+  
   PRPRecipe *recipe=[[PRPRecipe alloc] init];
   recipe.title=@"Chocolate Chip Cookies";
   recipe.directions=@"this is what I think should happen";
   recipe.image=[UIImage imageNamed:@"br-5.jpg"];
+  [localRecipes addObject:recipe];
+
+  recipe=[[PRPRecipe alloc] init];
+  recipe.title=@"Other Chocolate Chip Cookies";
+  recipe.directions=@"this is what I think should happen";
+  recipe.image=[UIImage imageNamed:@"br-5.jpg"];
+  [localRecipes addObject:recipe];
+ 
+   self.recipes=localRecipes;
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-  self.viewController = [[PRPViewController alloc] initWithNibName:@"PRPViewController" bundle:nil];
-  self.viewController.recipe=recipe;
+  self.viewController = [[PRPRecipesListViewController alloc] initWithNibName:@"PRPRecipesListViewController" bundle:nil];
+  self.viewController.recipes=self.recipes;
   self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
@@ -52,6 +66,13 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
   // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+-(NSArray *)recipes{
+  if(!_recipes){
+    // create recipes here
+  }
+  return _recipes;
 }
 
 @end
