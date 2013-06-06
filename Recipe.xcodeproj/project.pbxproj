@@ -19,6 +19,7 @@
 		6BCA17841760E2770021685F /* PRPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA17831760E2770021685F /* PRPViewController.m */; };
 		6BCA17871760E2770021685F /* PRPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BCA17851760E2770021685F /* PRPViewController.xib */; };
 		6BCA178F1760E2BC0021685F /* PRPRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA178E1760E2BC0021685F /* PRPRecipe.m */; };
+		6BCA17911760EC370021685F /* br-5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6BCA17901760EC370021685F /* br-5.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		6BCA17861760E2770021685F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PRPViewController.xib; sourceTree = "<group>"; };
 		6BCA178D1760E2BC0021685F /* PRPRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRPRecipe.h; path = Recipe/PRPRecipe.h; sourceTree = "<group>"; };
 		6BCA178E1760E2BC0021685F /* PRPRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRPRecipe.m; path = Recipe/PRPRecipe.m; sourceTree = "<group>"; };
+		6BCA17901760EC370021685F /* br-5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "br-5.jpg"; path = "Recipe/br-5.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				6BCA178D1760E2BC0021685F /* PRPRecipe.h */,
 				6BCA178E1760E2BC0021685F /* PRPRecipe.m */,
+				6BCA17901760EC370021685F /* br-5.jpg */,
 				6BCA17701760E2770021685F /* Recipe */,
 				6BCA17691760E2770021685F /* Frameworks */,
 				6BCA17681760E2770021685F /* Products */,
@@ -169,6 +172,7 @@
 				6BCA177F1760E2770021685F /* Default@2x.png in Resources */,
 				6BCA17811760E2770021685F /* Default-568h@2x.png in Resources */,
 				6BCA17871760E2770021685F /* PRPViewController.xib in Resources */,
+				6BCA17911760EC370021685F /* br-5.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

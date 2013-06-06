@@ -16,6 +16,8 @@
 {
   PRPRecipe *recipe=[[PRPRecipe alloc] init];
   recipe.title=@"Chocolate Chip Cookies";
+  recipe.directions=@"this is what I think should happen";
+  recipe.image=[UIImage imageNamed:@"br-5.jpg"];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
   self.viewController = [[PRPViewController alloc] initWithNibName:@"PRPViewController" bundle:nil];
