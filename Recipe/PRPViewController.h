@@ -15,4 +15,8 @@
 @property(nonatomic, strong) IBOutlet UITextView *directionsView;
 @property(nonatomic, strong) IBOutlet UIImageView *imageView;
 @property(nonatomic, strong) PRPRecipe *recipe;
+@property(nonatomic, strong) IBOutlet UILabel *prepTime;
+@property(nonatomic, strong) NSNumberFormatter *formatter;
+@property (strong, nonatomic) IBOutlet UIButton *dissmissButton;
+- (IBAction)dismiss:(id)sender;
 @end

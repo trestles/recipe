@@ -12,5 +12,5 @@
 @property(nonatomic, copy) NSString *title;
 @property(nonatomic, copy) NSString *directions;
 @property(nonatomic, strong) UIImage *image;
-
+@property(nonatomic, strong) NSNumber *preparationTime;
 @end

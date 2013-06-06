@@ -7,6 +7,7 @@
 //
 
 #import "PRPAppDelegate.h"
+#import "PRPRecipesSource.h"
 
 //#import "PRPViewController.h"
 #import "PRPRecipesListViewController.h"
@@ -22,20 +23,32 @@
   recipe.title=@"Chocolate Chip Cookies";
   recipe.directions=@"this is what I think should happen";
   recipe.image=[UIImage imageNamed:@"br-5.jpg"];
+  recipe.preparationTime=[[NSNumber alloc] initWithInt:12];
   [localRecipes addObject:recipe];
 
   recipe=[[PRPRecipe alloc] init];
   recipe.title=@"Other Chocolate Chip Cookies";
-  recipe.directions=@"this is what I think should happen";
+  recipe.directions=@"Other this is what I think should happen";
   recipe.image=[UIImage imageNamed:@"br-5.jpg"];
+  recipe.preparationTime=[[NSNumber alloc] initWithInt:34];
+
   [localRecipes addObject:recipe];
  
+   PRPRecipesSource *localDS=[[PRPRecipesSource alloc] init];
+  localDS.recipes=localRecipes;
    self.recipes=localRecipes;
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
   self.viewController = [[PRPRecipesListViewController alloc] initWithNibName:@"PRPRecipesListViewController" bundle:nil];
-  self.viewController.recipes=self.recipes;
+  //self.viewController.recipes=self.recipes;
+  
+  
+  //self.viewController.dataSource=[[PRPRecipesSource alloc] init];
+  self.viewController.dataSource=localDS;
+  
+  
+  
   self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
